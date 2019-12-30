@@ -24,7 +24,7 @@ public class BasicBlasterProjectile : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        var destructible = other.GetComponent<Destructible>();
+        var destructible = other.GetComponentInParent<Destructible>();
         if (destructible != null)
         {
             destructible.Damage(damage);

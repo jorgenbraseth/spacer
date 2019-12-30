@@ -1,5 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!64 &6013608112881053146
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696413570826875920}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 289301614986012343, guid: 4394d80832ed27346b276854977beea4, type: 3}
 --- !u!1 &7957064050471037168
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,7 +25,6 @@ GameObject:
   - component: {fileID: 7957064050471037165}
   - component: {fileID: 7957064050471037166}
   - component: {fileID: 7957064050471037167}
-  - component: {fileID: 969001710660595919}
   - component: {fileID: 5674826169292881620}
   m_Layer: 0
   m_Name: Asteroid
@@ -28,7 +41,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7957064050471037168}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.488186, y: 0.019912958, z: -13.432433}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2436877305153275395}
@@ -63,20 +76,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5477cf705def2d44aec1146ffbd9867, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!64 &969001710660595919
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7957064050471037168}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 289301614986012343, guid: 4394d80832ed27346b276854977beea4, type: 3}
+  maxSpeed: 1
 --- !u!114 &5674826169292881620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,8 +90,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialHp: 100
-  spawnOnDeath: {fileID: 1074919881147480712, guid: efc85776d9f04614d95399e3f498cb3e,
-    type: 3}
+  spawnOnDeath:
+  - {fileID: 1074919881147480712, guid: efc85776d9f04614d95399e3f498cb3e, type: 3}
 --- !u!1001 &7253946814993722649
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -102,17 +102,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 4394d80832ed27346b276854977beea4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 4.08
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4394d80832ed27346b276854977beea4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 3.39
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4394d80832ed27346b276854977beea4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 3.29
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4394d80832ed27346b276854977beea4,
         type: 3}
@@ -176,6 +176,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4394d80832ed27346b276854977beea4, type: 3}
+--- !u!1 &1696413570826875920 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 4394d80832ed27346b276854977beea4,
+    type: 3}
+  m_PrefabInstance: {fileID: 7253946814993722649}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2436877305153275395 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 4394d80832ed27346b276854977beea4,
