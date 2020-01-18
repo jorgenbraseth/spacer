@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7005b70e92284b23873e3f6f6a2df808, type: 3}
-  m_Name: Ore
+  m_Name: CopperOre
   m_EditorClassIdentifier: 
-  name: Ore
-  icon: {fileID: 21300000, guid: 68281d993a6f2fe40a4ce957b3145cca, type: 3}
-  lootPrefab: {fileID: 87075246595602072, guid: e589118a2d9e90e46aaa0a9f34261e17,
+  id: 06a8d603-061d-45b7-94fe-3b1a14fa1733
+  name: Copper Ore
+  icon: {fileID: 1626135426388057450, guid: 1b6b96147cbd30d43a31e4d9bdeff69e, type: 3}
+  lootPrefab: {fileID: 87075246595602072, guid: 469adf01fa8aeb5439ebc0a95838a363,
     type: 3}

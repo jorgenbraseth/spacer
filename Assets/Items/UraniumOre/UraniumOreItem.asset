@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7005b70e92284b23873e3f6f6a2df808, type: 3}
+  m_Name: UraniumOreItem
+  m_EditorClassIdentifier: 
+  id: 030934a5-90a0-4a88-890a-5797f09df201
+  name: UraniumOre
+  icon: {fileID: 1626135426388057450, guid: d4b8f5d562a55ce48830df44b52ae9d2, type: 3}
+  lootPrefab: {fileID: 87075246595602072, guid: bda9611215fd8f343acbb995f8eda241,
+    type: 3}
