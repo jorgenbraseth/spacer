@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace DefaultNamespace
 {
@@ -16,18 +17,16 @@ namespace DefaultNamespace
     [CreateAssetMenu(menuName = "Spacer/Lootable Item")]
     public class Item: ScriptableObject
     {
-        private static int itemId = 0;
-        
-        public int id;
+        public string id;
         public string name;
-        public Sprite icon;
+        public Image icon;
         public GameObject lootPrefab;
 
         public ItemProperty[] properties = new ItemProperty[]{};
 
-        private void Awake()
+        public void Awake()
         {
-            id = itemId++;
+            id = Guid.NewGuid().ToString();
         }
     }
 }

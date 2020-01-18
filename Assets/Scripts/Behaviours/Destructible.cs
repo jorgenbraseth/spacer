@@ -2,6 +2,7 @@
 
 public class Destructible : MonoBehaviour
 {
+    [SerializeField]
     private float currentHp;
     
     [SerializeField]
